@@ -11,7 +11,8 @@
     </head>
 
     <body> 
-        <div id="pc">       
+        <div id="pc">    
+<!--Header-->
             <header id="header">
                 <div id="header-items-container">
                     <i class="icon material-icons">menu</i>
@@ -19,17 +20,18 @@
 
                     <div id="search-bar">
                         <input id="bar" type="text" placeholder="Search..">  
-                        <button><i id="search-icon"class="icon material-icons">search</i></button>
+                        <button id="search-button"><i id="search-icon"class="icon material-icons">search</i></button>
                     </div>
-                    <i class="icon material-icons">mic</i>
+                    <button id="mic-button"><i id="mic-icon" class="icon material-icons">mic</i></button>
                     <div id="left-icons">                        
-                        <i class="icon material-icons">video_call</i>
+                        <i class="icon material-icons">file_upload</i>
                         <i class="icon material-icons">notifications</i> 
                         <img id="prof-pic"   src="img/prof_pic.png">
                     </div>
                     
                 </div>
             </header>
+<!--Content-->
             <section id="content">
                 <div class="column1">
                     <div id="menu-inactive">
@@ -38,11 +40,12 @@
                     <div id="menu-active">
                         <div id="section1">
                             <ul>
-                                <li>HOME</li>
-                                <li>Shorts</li>
-                                <li>Subscriptions</li>
+                                <li><i class="icon material-icons">home</i> Home</li>
+                                <li><i class="icon material-icons">movie</i> Shorts</li>
+                                <li><i class="icon material-icons">ondemand_video</i> Subscriptions</li>
                             </ul>
                         </div>
+                        <hr class="solid">
                         <div id="section2">
                             <ul>
                                 <li>Library</li>
@@ -54,6 +57,7 @@
                                 <li>Show more</li>
                             </ul>
                         </div>
+                        <hr class="solid">
                         <div id="suscriptions">
                             <ul>
                                 <li>Abao in tokyo</li>
@@ -63,17 +67,31 @@
                                 <li>Your Clips</li>
                                 <!--Show more displays more-->
                                 <li>Show more</li>
+                                <li>Abao in tokyo</li>
+                                <li> Lofi Girl</li>
+                                <li>NASA</li>
+                                <li>Eysel d'Mont</li>
+                                <li>Your Clips</li>
+                                <li>Abao in tokyo</li>
+                                <li> Lofi Girl</li>
+                                <li>NASA</li>
+                                <li>Eysel d'Mont</li>
+                                <li>Your Clips</li>
                             </ul>
                         </div>
+                        <hr class="solid">
                         <div id="Explore">
 
                         </div>
+                        <hr class="solid">
                         <div id="More">
 
                         </div>
+                        <hr class="solid">
                         <div id="settings">
 
                         </div>
+                        <hr class="solid">
                         <div id="terms">
 
                         </div>
@@ -81,19 +99,24 @@
                 </div>
 
                 <div class="column2">
-                    <div>
-                        <ul id="topics-bar">
-                            <li>All</li>
-                            <li>Muisc</li>
-                            <li>Css</li>
-                            <li>User interface design</li>
-                            <li>Gaming</li>
-                            <li>All</li>
-                            <li>Muisc</li>
-                            <li>Css</li>
-                            <li>User interface design</li>
-                            <li>Gaming</li>
-                        </ul>
+                    <div id="topics">
+                        <div id="topic-container">
+                            <ul id="topics-bar">
+                                <li><p>All</p></li>
+                                <li><p>Music</p></li>
+                                <li><p>Computer Science</p></li>
+                                <li><p>Transformers</p></li>
+                                <li><p>Characters</p></li>
+                                <li><p>Alternative rock</p></li>
+                                <li><p>Graphic Design</p></li>
+                                <li><p>Webos</p></li>  
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="videos-section">
+                        <h1>Texto de prueba
+                        </h1>
+
                     </div>
 
                 </div>

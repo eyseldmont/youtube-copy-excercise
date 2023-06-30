@@ -1,11 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    
 }
 
 body{
     background-color: rgb(15, 15, 15);
+    margin: 0;
 }
 
 .icon{    
@@ -13,106 +19,186 @@ body{
 }
 
 #header{
-
+    position: fixed;
     background-color: black;
     width: 100vw;
     height: 3.5rem;
     display: flex;
     align-items: center;
+    border: 1px greenyellow solid;
     
 }
 
 #header-items-container{
-    padding-left: 1.5rem;
+    padding-left: 1.5%;
     display: flex;
     align-items:center;
-    border: 1px wheat solid;
     width: 100%;
+    
 }
 
 #yt-logo{
-    height: 1.5rem;
-    padding-left: 2rem;
+    height: 1.25rem;
+    padding-left: 2%;
 }
 
 #search-bar{
     display: flex;
     align-items:center;
-    margin-left: 19.5rem;
+    margin-left: 15%;
 }
 
 #bar{
-    width: 30rem;
-    height: 2rem;
-    
-   
+    border-radius: 25px 0 0 25px;
+    width: 32rem;
+    height: 2.2rem;
+    border: 1px gray solid;
+    background-color: rgb(15, 15, 15);
+    color: white;
 }
-#search-icon{
-    padding-left: 0;
+
+#bar:focus {
+    border: 1px blue;
+  }
+
+#search-button{
     margin-left: 0;
-    height: 2rem;
+    width: 3rem;
+    height: 2.4rem;
+    border-radius: 0 25px 25px 0;
+    border: 1px gray solid;
+    border-left: 0;
+    background-color: rgb(22, 22, 22);
+}
+#search-button:hover{
+    cursor: pointer;
+}
+
+#search-icon{
+    margin-top: 3px;
+}
+
+#mic-button{
+    margin-left: 1%;
+    background-color: rgb(12, 12, 12);
+    border-radius: 70%;
+    height: 2.5rem;
+    width: 2.5rem;
+    
+    border: none;
+    
+}
+
+#mic-button:hover{
+    cursor: pointer;
+    background-color: rgb(22, 22, 22);  
+}
+#mic-icon{
+  
 }
 
 #left-icons{
     display: flex;
     align-items:center;
-    margin-left: 20%;
+    margin-left: 13%;
+    border: 1px red solid;
 }
 
 #left-icons i{
-    padding: 1rem;
+    padding: 10%;
 }
 
 #prof-pic{
     border-radius: 50%;
-    padding: 1rem;;
+    margin-left: 1rem;
     height: 2rem;
-}
-/* Content*/
-#content{
-    display: grid;
-    grid-template-columns: 14% 86%;
-    height: 100vh;
+    border: 1px red solid;
 }
 
-/*Column 1*/
+#content{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 0%;
+    border: 1px rgb(0, 255, 213) solid;
+    position: fixed;
+    margin-top: 3.5rem;
+}
+
+/* #region Column 1*/
 .column1 {
     background-color: rgb(15, 15, 15);; /* Example background color */
     height: 100vh;
-    overflow-y: visible;
-    color: white;
-    padding: 1.5rem;
-    border: 1px red solid;
-    
+    width: 1fr;
+    overflow-y: scroll;
+    border: 1px blue solid;
+    margin-left: 5%;
+    padding-top: 0.5%;
+    padding-left: 1%;
   }
-
-.column1 ul li{
-    list-style: none; 
-    padding: 0.3rem;
-    font-size: 0.85rem;
+#menu-active{
+      
 }
-/*Column 2*/
+
+#menu-active ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-active li{
+    list-style: none; 
+    font-size: 0.85rem;
+    color: white;
+    padding: 5%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#menu-active li:hover{
+    background-color: rgb(44, 44, 44);
+}
+
+/* #endregion */
+
+/* #region Column 2*/
 .column2 {
     background-color: rgb(15, 15, 15);; /* Example background color */
-    height: 100vh;
-    padding:0;
+    border: 2px red solid;
 }
-#topics-bar{
+#topic-container{
+    background-color: rgb(134, 134, 134);
+    width: 100%;
+    
+}
+#topics-bar{         
     display: flex;
-    align-items: center;
-    justify-content:space-between;    
+    align-items: center;   
+    width: 100%;  
 }
 
 #topics-bar li{
+    display: flex;
+    margin-top: 1%;
+    margin-left:;
     color: white;
     list-style: none;
-    background-color: gray;
-    margin: 1rem;
-    margin-right: 1rem;
-    padding: 0.2rem;
-    
+    padding: 0.5%;
 }
 
+#topics-bar li p{
+    background-color: rgb(44, 44, 44);
+    padding: 0.4rem;
+    padding-left: 0.3rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
 
-
+#videos-section{
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+    border: 1px palevioletred solid;
+}
+/* #endregion */
 
