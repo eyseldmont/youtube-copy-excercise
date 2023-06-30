@@ -6,12 +6,13 @@
 }
 
 html{
-    
+    height: 100%;
 }
 
 body{
     background-color: rgb(15, 15, 15);
     margin: 0;
+    height: 100%;
 }
 
 .icon{    
@@ -23,6 +24,7 @@ hr{
     border-top: 0.5px rgb(196, 196, 196) solid ;
 }
 
+/*HEADER*/
 #header{
     position: fixed;
     background-color: black;
@@ -30,7 +32,6 @@ hr{
     height: 3.5rem;
     display: flex;
     align-items: center;
-    border: 1px greenyellow solid;
     
 }
 
@@ -38,8 +39,7 @@ hr{
     padding-left: 1.5%;
     display: flex;
     align-items:center;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 #yt-logo{
@@ -89,7 +89,6 @@ hr{
     border-radius: 70%;
     height: 2.5rem;
     width: 2.5rem;
-    
     border: none;
     
 }
@@ -117,15 +116,14 @@ hr{
     border-radius: 50%;
     margin-left: 1rem;
     height: 2rem;
-    border: 1px red solid;
 }
 
+/*Content GRID*/
 #content{
     width: 100vw;
     display: grid;
     grid-template-columns: 20% 1fr;
     grid-template-rows: 1fr;
-    border: 1px rgb(0, 255, 213) solid;
     position: fixed;
     margin-top: 3.5rem;
 }
@@ -182,6 +180,7 @@ hr{
 .column2 {
     background-color: rgb(15, 15, 15);; /* Example background color */
     border: 2px red solid;
+    overflow-y: scroll;
 }
 #topic-container{
     background-color: rgb(15, 15, 15);
@@ -222,7 +221,7 @@ hr{
     height: 100%;
     width: 100%;
     border: 1px rgb(43, 255, 0) solid;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #videos-grid{
