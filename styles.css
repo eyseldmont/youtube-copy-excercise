@@ -125,7 +125,6 @@ hr{
     display: grid;
     grid-template-columns: 20% 1fr;
     grid-template-rows: 1fr;
-    margin-top: 0%;
     border: 1px rgb(0, 255, 213) solid;
     position: fixed;
     margin-top: 3.5rem;
@@ -222,23 +221,26 @@ hr{
     color: white;
     height: 100%;
     width: 100%;
-
-    border: 1px palevioletred solid;
+    border: 1px rgb(43, 255, 0) solid;
+    overflow-y: scroll;
 }
 
 #videos-grid{
     width: 100%;
     height: 100%;
-    border: 1px rgb(43, 255, 0) solid;
     padding-top: 2%;
     padding-left: 2%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));;
-    grid-gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    grid-gap: 20px 30px ;
 }
 
+.video-item{
+    border: 1px violet solid;
+}
 .thumbnail{
-    height: 25%;
+    
+    width: 100%;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -246,6 +248,11 @@ hr{
     display: flex;
     padding-top: 0.5rem;
 }
+.channel-prof{
+    border-radius: 50%;
+    height: 3rem;
+}
+
 .text-column{
     padding-left: 0.5rem;
 }
@@ -254,7 +261,6 @@ hr{
     font-size: 1rem;
     font-weight: bold;
 }
-
 
 .video-channel{
     font-size: 0.8rem;
@@ -267,10 +273,7 @@ hr{
     color: gray;
     padding-top: 0.2rem;
 }
-.channel-prof{
-    border-radius: 50%;
-    height: 3rem;
-}
+
 
 /* #endregion */
 
