@@ -18,6 +18,11 @@ body{
     color: white;
 }
 
+hr{
+    border: none;
+    border-top: 0.5px rgb(196, 196, 196) solid ;
+}
+
 #header{
     position: fixed;
     background-color: black;
@@ -131,14 +136,21 @@ body{
     background-color: rgb(15, 15, 15);; /* Example background color */
     height: 100vh;
     width: 1fr;
-    overflow-y: scroll;
     border: 1px blue solid;
-    margin-left: 5%;
-    padding-top: 0.5%;
-    padding-left: 1%;
+    
+    
   }
 #menu-active{
-      
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-right: 5%;
+    padding-top: 0.5%;
+    padding-left: 1%;
+    
+}
+
+.column1:hover{
+    overflow: scroll;
 }
 
 #menu-active ul{
@@ -150,12 +162,19 @@ body{
     list-style: none; 
     font-size: 0.85rem;
     color: white;
-    padding: 5%;
+    padding: 4%;
     border-radius: 15px 15px 15px 15px;
+    display: flex;
+    align-items:center;
 }
+
 
 #menu-active li:hover{
     background-color: rgb(44, 44, 44);
+}
+
+#menu-active p{
+    padding-left: 10%;
 }
 
 /* #endregion */
@@ -166,7 +185,7 @@ body{
     border: 2px red solid;
 }
 #topic-container{
-    background-color: rgb(134, 134, 134);
+    background-color: rgb(15, 15, 15);
     width: 100%;
     
 }
@@ -178,8 +197,8 @@ body{
 
 #topics-bar li{
     display: flex;
-    margin-top: 1%;
-    margin-left:;
+    margin-top: 0.3%;
+    margin-left: 2%;
     color: white;
     list-style: none;
     padding: 0.5%;
@@ -197,8 +216,15 @@ body{
     color: white;
     height: 100%;
     width: 100%;
-    margin-top: 10%;
+
     border: 1px palevioletred solid;
+}
+
+#videos-grid{
+    width: 100%;
+    height: 100%;
+    border: 1px rgb(43, 255, 0) solid;
+    
 }
 /* #endregion */
 
