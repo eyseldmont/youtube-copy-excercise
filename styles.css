@@ -204,12 +204,18 @@ hr{
     padding: 0.5%;
 }
 
+
 #topics-bar li p{
     background-color: rgb(44, 44, 44);
     padding: 0.4rem;
     padding-left: 0.3rem;
     border-radius: 5px;
     font-size: 0.9rem;
+}
+
+#topics-bar li p:hover{
+    cursor: pointer;
+    background-color: rgb(70, 70, 70);
 }
 
 #videos-section{
@@ -224,7 +230,47 @@ hr{
     width: 100%;
     height: 100%;
     border: 1px rgb(43, 255, 0) solid;
-    
+    padding-top: 2%;
+    padding-left: 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));;
+    grid-gap:20px;
 }
+
+.thumbnail{
+    height: 25%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.detail-container{
+    display: flex;
+    padding-top: 0.5rem;
+}
+.text-column{
+    padding-left: 0.5rem;
+}
+
+.video-title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.video-channel{
+    font-size: 0.8rem;
+    color: gray;
+    padding-top: 0.5rem;
+}
+
+.views{
+    font-size: 0.8rem;
+    color: gray;
+    padding-top: 0.2rem;
+}
+.channel-prof{
+    border-radius: 50%;
+    height: 3rem;
+}
+
 /* #endregion */
 
